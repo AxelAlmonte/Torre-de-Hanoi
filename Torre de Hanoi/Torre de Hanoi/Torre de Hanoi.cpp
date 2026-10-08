@@ -62,28 +62,7 @@ void leerEntero(string mensaje, int& pDato)
     } while (error);
 }
 
-// Pregunta si/no y solo acepta s, S, n o N. Devuelve true si la respuesta es si.
-bool leerSiNo(string mensaje)
-{
-    string respuesta;
-    bool valido;
 
-    do
-    {
-        cout << mensaje;
-        if (!(cin >> respuesta)) {
-            cout << endl;
-            exit(0);
-        }
-
-        valido = (respuesta == "s" || respuesta == "S" || respuesta == "n" || respuesta == "N");
-        if (!valido) {
-            cout << "Entrada invalida, escriba s o n.\n" << endl;
-        }
-    } while (!valido);
-
-    return (respuesta == "s" || respuesta == "S");
-}
 
 void HanoiTower(int n, char src, char aux, char dest) {
 
@@ -142,7 +121,7 @@ int main() {
     {
         limpiarPantalla();
 
-        cout << "===== TORRE DE HANOI =====" << endl;
+        cout << "Torre de Hanoi" << endl;
         cout << "1. Resolver Torre de Hanoi" << endl;
         cout << "2. Salir" << endl;
 
@@ -165,9 +144,32 @@ int main() {
             } while (repetir);
         }
         else {
-            cout << "\nHasta luego!" << endl;
+            cout << "\nSaliendo" << endl;
         }
     } while (opcion != 2);
 
     return 0;
+}
+
+// Pregunta si/no y solo acepta s, S, n o N. Devuelve true si la respuesta es si.
+bool leerSiNo(string mensaje)
+{
+    string respuesta;
+    bool valido;
+
+    do
+    {
+        cout << mensaje;
+        if (!(cin >> respuesta)) {
+            cout << endl;
+            exit(0);
+        }
+
+        valido = (respuesta == "s" || respuesta == "S" || respuesta == "n" || respuesta == "N");
+        if (!valido) {
+            cout << "Entrada invalida, escriba s o n.\n" << endl;
+        }
+    } while (!valido);
+
+    return (respuesta == "s" || respuesta == "S");
 }
