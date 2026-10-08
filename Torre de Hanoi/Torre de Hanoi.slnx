@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Torre de Hanoi/Torre de Hanoi.vcxproj" />
+  <Project Path="Torre de Hanoi/Torre de Hanoi.vcxproj" Id="1707045e-8c15-4ec5-8042-b2b40ff6e12a" />
 </Solution>
