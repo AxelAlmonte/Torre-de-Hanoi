@@ -1,5 +1,5 @@
 /*
-
+Fecha: 8/10/2026
 Grupo 1:
 - Alessandro Salamone - 1132116
 - Carlos Minaya - 1132836
@@ -8,6 +8,8 @@ Grupo 1:
 - ⁠José Pinales - 1133255
 - Christian Acosta - 1132698
 
+Realizar un programa C++ que permita resolver el problema de las Torres de Hanoi, 
+el cual consiste en trasladar una cantidad x de anillos desde una torre A a una torre B.
 */
 
 #include <iostream>
