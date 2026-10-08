@@ -74,15 +74,16 @@ int main() {
     cout << "Torre de Hanoi\n" << endl;
 
     int n;
-    leerEntero("Ingrese la cantidad de anillos: ", n);
 
-    if (n < 3) {
-        cout << "La cantidad de anillos debe ser mayor o igual a 3." << endl;
-        return 1;
-    }
-    else {
-        cout << "La cantidad de anillos es: " << n << endl;
-    }
+    do {
+        leerEntero("Ingrese la cantidad de anillos: ", n);
+
+        if (n < 3) {
+            cout << "La cantidad de anillos debe ser mayor o igual a 3.\n" << endl;
+        }
+    } while (n < 3);
+
+    cout << "La cantidad de anillos es: " << n << endl;
 
     HanoiTower(n, 'A', 'B', 'C');
 
